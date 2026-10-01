@@ -167,7 +167,7 @@ export default function TunerPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#0F0F0F] text-[#F5F0E6] flex flex-col items-center justify-between p-6 selection:bg-[#8B0000] selection:text-[#F5F0E6]">
+    <main className="min-h-screen bg-[#0F0F0F] text-[#F5F0E6] w-full flex flex-col items-center justify-between p-6 selection:bg-[#8B0000] selection:text-[#F5F0E6]">
       <div className="w-full max-w-md flex items-center justify-between">
         <Link
           href="/"

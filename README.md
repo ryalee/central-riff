@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎸 Zunbee Hub - Guitar & Tabs App
 
-## Getting Started
+> Uma plataforma web moderna desenvolvida para guitarristas e músicos, oferecendo busca rápida de tablaturas oficiais e ferramentas de prática integradas.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Sobre o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O **Zunbee Hub** nasceu com o objetivo de centralizar ferramentas essenciais para músicos e guitarristas num só lugar, com uma interface limpa, tema escuro sofisticado e alto desempenho. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto conta com integração direta a catálogos de tablaturas e um motor de áudio customizado de alta precisão para prática diária.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Funcionalidades
 
-To learn more about Next.js, take a look at the following resources:
+- **🔍 Busca de Tablaturas:** Integração otimizada (via Server Actions do Next.js) para pesquisa instantânea de cifras e tablaturas oficiais.
+- **⏱️ Metrônomo de Alta Precisão (`MetronomeEngine`):** Motor de áudio construído com a Web Audio API (modelo *lookahead*) para garantir estabilidade rítmica sem atrasos (*drift*), com tratamento robusto de ciclo de vida e estados de áudio.
+- **🎨 Interface Minimalista & Dark Mode:** Desenvolvida com um design agressivo e elegante em tons de preto, cinza escuro e detalhes em vermelho/bordô.
+- **⚡ Performance Moderna:** Aproveitando o ecossistema Next.js (App Router, Turbopack e Server Actions) para garantir segurança contra CORS e carregamento rápido.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tecnologias Utilizadas
 
-## Deploy on Vercel
+Este projeto foi construído utilizando tecnologias modernas de desenvolvimento web:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework:** [Next.js](https://nextjs.org/) (App Router & Server Actions)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+- **Ícones:** [Lucide React](https://lucide.dev/)
+- **Áudio:** Web Audio API (Nativa)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📦 Como Executar o Projeto
+
+Certifica-te de que tens o **Node.js** instalado na tua máquina.
+
+1. **Clona o repositório:**
+   ```bash
+   git clone [https://github.com/SEU-USUARIO/nome-do-repositorio.git](https://github.com/SEU-USUARIO/nome-do-repositorio.git)
+   cd nome-do-repositorio

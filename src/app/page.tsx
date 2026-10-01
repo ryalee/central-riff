@@ -28,9 +28,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#0F0F0F] text-[#F5F0E6] flex flex-col items-center justify-between p-6 md:p-12 selection:bg-[#8B0000] selection:text-[#F5F0E6]">
-      {/* Header do Hub */}
-      <div className="w-full max-w-full flex items-center justify-between border-b border-[#4A1C1A]/40 pb-6">
+    <section className="min-h-screen bg-[#0F0F0F] text-[#F5F0E6] flex flex-col items-center justify-between p-6 md:p-12 selection:bg-[#8B0000] selection:text-[#F5F0E6]">
+      {/* header */}
+      <header className="w-full max-w-full flex items-center justify-between border-b border-[#4A1C1A]/40 pb-6">
         <div className="flex items-center">
           <Image src="/logo-icon.png" alt="logo" width={50} height={50} />
 
@@ -41,9 +41,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Grid de Ferramentas */}
+      {/* ferramentas */}
       <div className="w-full max-w-4xl my-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
         {tools.map((tool, index) => {
           const content = (
@@ -95,6 +95,6 @@ export default function Home() {
           );
         })}
       </div>
-    </main>
+    </section>
   );
 }

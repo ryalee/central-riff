@@ -50,7 +50,7 @@ export default function MetronomePage() {
 
   return (
     <main className="min-h-screen bg-[#0F0F0F] text-[#F5F0E6] flex flex-col items-center justify-between p-6 selection:bg-[#8B0000] selection:text-[#F5F0E6]">
-      <div className="w-full max-w-md flex items-center justify-between">
+      <div className="w-full flex items-center justify-between">
         <Link 
           href="/" 
           className="flex items-center gap-2 text-[#797D62] hover:text-[#F5F0E6] transition-colors"
@@ -58,9 +58,6 @@ export default function MetronomePage() {
           <ArrowLeft size={20} />
           <span>Voltar ao Hub</span>
         </Link>
-        <span className="text-xs uppercase tracking-widest text-[#F5F0E6] font-semibold bg-[#8B0000]/20 px-3 py-1 rounded-full border border-[#8B0000]/40">
-          Metrônomo
-        </span>
       </div>
 
       <div className="w-full max-w-md bg-[#1A1A1A] border border-[#4A1C1A]/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl flex flex-col items-center gap-8 mb-20">
