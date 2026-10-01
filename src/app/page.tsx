@@ -7,26 +7,23 @@ export default function Home() {
     {
       title: "Metrônomo de Precisão",
       description: "Controle de BPM sem atrasos usando Web Audio API.",
-      icon: <Timer size={24} className="text-[#8B0000]" />,
+      icon: "/metronome.png",
       href: "/metronome",
-      status: "Disponível",
       active: true,
     },
     {
       title: "Afinador Cromático",
       description: "Afinador em tempo real captando o som via microfone.",
-      icon: <Mic size={24} className="text-[#797D62]" />,
+      icon: "/tuner.png",
       href: "/tuner",
-      status: "Em breve",
       active: false,
     },
     {
       title: "Busca de Tablaturas",
       description: "Integração com API para encontrar tablaturas rapidamente.",
-      icon: <Music size={24} className="text-[#797D62]" />,
+      icon: "/tabs.png",
       href: "/tabs",
-      status: "Em breve",
-      active: false,
+      active: true,
     },
   ];
 
@@ -34,10 +31,9 @@ export default function Home() {
     <main className="min-h-screen bg-[#0F0F0F] text-[#F5F0E6] flex flex-col items-center justify-between p-6 md:p-12 selection:bg-[#8B0000] selection:text-[#F5F0E6]">
       {/* Header do Hub */}
       <div className="w-full max-w-full flex items-center justify-between border-b border-[#4A1C1A]/40 pb-6">
-        <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center">
-            <Image src="/logo.png" alt="logo" width={50} height={50} />
-          </div>
+        <div className="flex items-center">
+          <Image src="/logo-icon.png" alt="logo" width={50} height={50} />
+
           <div>
             <h1 className="font-bold text-lg tracking-tight">Guitar Hub</h1>
             <p className="text-xs text-[#797D62]">
@@ -59,18 +55,12 @@ export default function Home() {
               }`}
             >
               <div className="flex items-center justify-between">
-                <div className="w-12 h-12 rounded-2xl bg-[#0F0F0F] border border-[#262626] flex items-center justify-center">
-                  {tool.icon}
-                </div>
-                <span
-                  className={`text-xs px-2.5 py-1 rounded-full font-medium ${
-                    tool.active
-                      ? "bg-[#8B0000]/20 text-[#F5F0E6] border border-[#8B0000]/40"
-                      : "bg-[#222222] text-[#797D62]"
-                  }`}
-                >
-                  {tool.status}
-                </span>
+                <Image
+                  src={tool.icon}
+                  alt={tool.title}
+                  width={40}
+                  height={40}
+                />
               </div>
 
               <div>
@@ -85,7 +75,7 @@ export default function Home() {
               <div className="flex items-center gap-2 text-xs font-medium text-[#F5F0E6]">
                 {tool.active && (
                   <>
-                    <span>Acessar ferramenta</span>
+                    <span>Acessar</span>
                     <ArrowRight
                       size={16}
                       className="transition-transform group-hover:translate-x-1 text-[#8B0000]"

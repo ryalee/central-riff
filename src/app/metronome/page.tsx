@@ -113,12 +113,12 @@ export default function MetronomePage() {
           {isPlaying ? (
             <>
               <Pause size={22} fill="currentColor" />
-              <span>Pausar Metrônomo</span>
+              <p>Pausar Metrônomo</p>
             </>
           ) : (
             <>
               <Play size={22} fill="currentColor" />
-              <span>Iniciar Metrônomo</span>
+              <p>Iniciar Metrônomo</p>
             </>
           )}
         </button>

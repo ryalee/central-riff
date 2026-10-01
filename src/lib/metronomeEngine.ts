@@ -30,8 +30,14 @@ export class MetronomeEngine {
       clearInterval(this.timerID);
       this.timerID = null;
     }
-    if (this.audioCtx) {
-      this.audioCtx.close();
+    
+    // CORREÇÃO: Verifica se o contexto existe e se NÃO está fechado antes de fechar
+    if (this.audioCtx && this.audioCtx.state !== 'closed') {
+      this.audioCtx.close().catch((err) => {
+        console.warn("Erro ao fechar o AudioContext:", err);
+      });
+      this.audioCtx = null;
+    } else {
       this.audioCtx = null;
     }
   }
