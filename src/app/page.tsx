@@ -35,7 +35,7 @@ export default function Home() {
           <Image src="/logo-icon.png" alt="logo" width={50} height={50} />
 
           <div>
-            <h1 className="font-bold text-lg tracking-tight">Guitar Hub</h1>
+            <h1 className="font-bold text-lg tracking-tight">Central Riff</h1>
             <p className="text-xs text-[#797D62]">
               Kit de Ferramentas All-in-One para Guitarristas
             </p>
