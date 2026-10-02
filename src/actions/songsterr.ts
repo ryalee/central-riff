@@ -11,7 +11,7 @@ export async function searchSongsAction(query: string) {
     }
     
     const data = await res.json();
-    console.log("DADOS RETORNADOS DO SONGSTERR:", JSON.stringify(data, null, 2)); // <--- Adicione isso
+    console.log("DADOS RETORNADOS DO SONGSTERR:", JSON.stringify(data, null, 2));
     
     return data;
   } catch (error) {

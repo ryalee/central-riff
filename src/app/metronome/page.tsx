@@ -66,7 +66,7 @@ export default function MetronomePage() {
           <p className="text-sm text-[#797D62] mt-1">Sincronia perfeita baseada em Web Audio API</p>
         </div>
 
-        {/* Display do BPM com pulso em Blood Red */}
+        {/* display do BPM com efeito de "pulso" */}
         <div className={`relative flex flex-col items-center justify-center w-40 h-40 rounded-full border-4 transition-all duration-75 ${
           isPlaying && isBeat ? 'border-[#8B0000] bg-[#8B0000]/20 scale-105 shadow-lg shadow-[#8B0000]/20' : 'border-[#262626] bg-[#0F0F0F]'
         }`}>

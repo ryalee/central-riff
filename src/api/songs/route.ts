@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
-  // Pega o parâmetro 'query' da URL
   const { searchParams } = new URL(request.url);
   const query = searchParams.get("query");
 
@@ -10,13 +9,11 @@ export async function GET(request: Request) {
   }
 
   try {
-    // O Next.js (servidor) faz a requisição pro Songsterr (sem problema de CORS)
     const res = await fetch(
       `https://www.songsterr.com/api/songs?pattern=${encodeURIComponent(query)}`,
     );
     const data = await res.json();
 
-    // Retorna os dados para o seu frontend
     return NextResponse.json(data);
   } catch (error) {
     return NextResponse.json(
